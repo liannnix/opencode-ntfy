@@ -1,0 +1,38 @@
+{
+  "name": "opencode-ntfy",
+  "version": "0.1.0",
+  "description": "OpenCode plugin for sending notifications via ntfy API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "ntfy",
+    "notifications"
+  ],
+  "license": "GPL-3.0-or-later",
+  "author": {
+    "name": "Andrey Limachko",
+    "email": "liannnix@giran.cyou"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liannnix/opencode-ntfy"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.0.0",
+    "typescript": "^5.0.0",
+    "bun-types": "^1.0.0"
+  }
+}
